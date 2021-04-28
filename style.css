@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+body {
+  margin: 0px;
+}
+
+.Shrik {
+  font-family: "Shrikhand";
+}
+
+.Roboto {
+  font-family: "Roboto";
+}
+
+.Header .Header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.Header .Header-icon {
+  margin: 0px 10px;
+}
+
+.Header .Header-localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 3px solid lightgray;
+  padding: 10px 0px;
+  background-color: #e6e1e1;
+}
+
+.Header .Header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F2F3F4;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.Header .Header-menu .Header-menu-title {
+  font-size: 16px;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+}
+
+.Header .Header-menu .Header-menu-description {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Header .Header-menu .Header-menu-button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0a2e3), color-stop(#ec8fe0), color-stop(#e87bdd), color-stop(#e266da), to(#dc4ed7));
+  background-image: linear-gradient(to bottom, #f0a2e3, #ec8fe0, #e87bdd, #e266da, #dc4ed7);
+  padding: 15px 0;
+  border: 1px solid linear-gradient(to bottom, #f0a2e3, #ec8fe0, #e87bdd, #e266da, #dc4ed7);
+  border-radius: 2rem;
+}
+
+.Header .Header-menu .Header-menu-button .Button-anchor {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+.Fonctionnement-mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Choice-selection {
+  border: 2px solid gray;
+  padding: 20px;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Bloc-page img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Bloc-page .Page-cadre {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid red;
+}
+
+.Bloc-page .Page-description {
+  height: auto;
+  padding-bottom: 0;
+}
+
+.Bloc-page a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

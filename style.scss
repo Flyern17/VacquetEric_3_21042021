@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
 $Color-button: linear-gradient(to bottom, #f0a2e3, #ec8fe0, #e87bdd, #e266da, #dc4ed7);
+$size: 10px;
 
 body {
     margin: 0px;
@@ -31,7 +32,7 @@ body {
         display: flex;
         justify-content: center;
         border-top: 3px solid lightgray;
-        padding: 10px 0px;
+        padding: $size 0px;
         background-color: #e6e1e1;
     }
 
@@ -59,7 +60,7 @@ body {
         
         .Header-menu-button {
             background-image: $Color-button;
-            padding: 15px 0;
+            padding: ($size + 5px) 0;
             border: 1px solid $Color-button;
             border-radius: 2rem;
             
@@ -67,10 +68,24 @@ body {
             .Button-anchor {
                 text-decoration: none;
                 color: white;
-                padding: 15px;
+                padding: $size + 5px;
             }
         }
     }
+}
+
+.Fonctionnement-mode {
+    display: flex;
+    flex-direction: column;
+}
+
+.Choice-selection {
+    border: 2px solid gray;
+    padding: $size * 2;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: $size;
+    display: flex;
+    
 }
 
 .Bloc-page {
@@ -82,7 +97,19 @@ body {
     }
 
     .Page-cadre {
-        padding: 10px;
+        padding: $size;
+        margin: $size;
+        border: 2px solid red;
+    }
+
+    .Page-description {
+        height: auto;
+        padding-bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
     }
 }
 
