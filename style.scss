@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+$Color-button: linear-gradient(to bottom, #f0a2e3, #ec8fe0, #e87bdd, #e266da, #dc4ed7);
+
+body {
+    margin: 0px;
+}
+
+.Shrik {
+    font-family: "Shrikhand";
+}
+
+.Roboto {
+    font-family: "Roboto";
+}
+
+
+.Header {
+
+    .Header-title {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .Header-icon {
+        margin: 0px 10px;
+    }
+
+    .Header-localisation {
+        display: flex;
+        justify-content: center;
+        border-top: 3px solid lightgray;
+        padding: 10px 0px;
+        background-color: #e6e1e1;
+    }
+
+    .Header-menu {
+        display: flex;
+        justify-content: center;
+        background-color: #F2F3F4;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+
+        .Header-menu-title {
+            font-size: 16px;
+            font-weight: 900;
+            width: 100%;
+            text-align: center;
+        }
+
+        .Header-menu-description {
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .Header-menu-button {
+            background-image: $Color-button;
+            padding: 15px 0;
+            border: 1px solid $Color-button;
+            border-radius: 2rem;
+            
+
+            .Button-anchor {
+                text-decoration: none;
+                color: white;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.Bloc-page {
+
+    img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    }
+
+    .Page-cadre {
+        padding: 10px;
+    }
+}
+
