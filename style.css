@@ -89,14 +89,52 @@ body {
           flex-direction: column;
 }
 
+.Fonctionnement-mode .Selection-header {
+  margin-left: 15px;
+}
+
 .Choice-selection {
-  border: 2px solid gray;
-  padding: 20px;
+  -webkit-box-shadow: 2px 2px 10px #cccaca;
+          box-shadow: 2px 2px 10px #cccaca;
+  padding: 15px;
   border-radius: 1rem 1rem 1rem 1rem;
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.Choice-selection .Button-number {
+  position: relative;
+  bottom: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0a2e3), color-stop(#ec8fe0), color-stop(#e87bdd), color-stop(#e266da), to(#dc4ed7));
+  background: linear-gradient(to bottom, #f0a2e3, #ec8fe0, #e87bdd, #e266da, #dc4ed7);
+  border: 1px solid linear-gradient(to bottom, #f0a2e3, #ec8fe0, #e87bdd, #e266da, #dc4ed7);
+  border-radius: 100%;
+}
+
+.Choice-selection .Button-icon {
+  position: relative;
+  top: 2px;
+  right: 5px;
+  color: gray;
+  margin: 0 5px;
+}
+
+.Bloc-page .Restaurant {
+  padding-left: 20px;
 }
 
 .Bloc-page img {
@@ -109,16 +147,42 @@ body {
 .Bloc-page .Page-cadre {
   padding: 10px;
   margin: 10px;
-  border: 2px solid red;
+  -webkit-box-shadow: 2px 2px 10px white;
+          box-shadow: 2px 2px 10px white;
 }
 
 .Bloc-page .Page-description {
-  height: auto;
-  padding-bottom: 0;
+  height: 40px;
 }
 
 .Bloc-page a {
   text-decoration: none;
   color: black;
+}
+
+.Bloc-page a h3 {
+  line-height: 0;
+}
+
+footer {
+  background: #353535;
+}
+
+.Footer-bloc {
+  margin-left: 15px;
+  line-height: 30px;
+}
+
+.Footer-bloc h2 {
+  color: white;
+}
+
+.Footer-bloc a {
+  text-decoration: none;
+  color: white;
+}
+
+.Footer-bloc div {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
