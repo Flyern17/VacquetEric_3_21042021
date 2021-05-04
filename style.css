@@ -18,11 +18,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
+  margin: 10px;
 }
 
 .Header .Header-icon {
-  margin: 0px 10px;
+  margin: 0 10px;
+}
+
+.Header a {
+  padding: 10px;
+  font-size: 30px;
 }
 
 .Header .Header-localisation {
@@ -151,6 +156,15 @@ body {
           box-shadow: 2px 2px 10px white;
 }
 
+.Bloc-page .Page-cadre .Card-badge {
+  background-color: #99E2D0;
+  color: #FF79DA;
+  padding: 10px;
+  border-radius: 0;
+  position: absolute;
+  right: 30px;
+}
+
 .Bloc-page .Page-description {
   height: 40px;
 }
@@ -171,10 +185,13 @@ footer {
 .Footer-bloc {
   margin-left: 15px;
   line-height: 30px;
+  padding-bottom: 20px;
 }
 
 .Footer-bloc h2 {
   color: white;
+  font-weight: 500;
+  padding-top: 20px;
 }
 
 .Footer-bloc a {
@@ -184,5 +201,13 @@ footer {
 
 .Footer-bloc div {
   color: white;
+}
+
+/* Menu */
+.Card-Image-Menu img {
+  width: 100%;
+  max-height: 512px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
