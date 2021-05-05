@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
-$Color-button: linear-gradient(to bottom, #f0a2e3, #ec8fe0, #e87bdd, #e266da, #dc4ed7);
+$Color-button: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+$Color-background: #f6f6f6;
 $size: 10px;
 
-@keyframes Nouveau {
-
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 body {
     margin: 0px;
@@ -33,6 +24,7 @@ body {
         display: flex;
         justify-content: center;
         margin: 10px;
+        font-weight: 500;
     }
 
     .Header-icon {
@@ -76,7 +68,7 @@ body {
         
         .Header-menu-button {
             background-image: $Color-button;
-            padding: ($size + 5px) 0;
+            padding: ($size + 5px);
             border: 1px solid $Color-button;
             border-radius: 2rem;
             
@@ -101,10 +93,13 @@ body {
 
 .Choice-selection {
     box-shadow: 2px 2px 10px rgb(204, 202, 202);
-    padding: $size + 5px;
+    padding: 20px 20px;
     border-radius: 1rem 1rem 1rem 1rem;
-    margin: $size;
+    background-color: $Color-background;
+    margin: 10px 20px;
     display: flex;
+    text-decoration: none;
+    color: black;
     
     .Button-number {
         position: relative;
@@ -115,21 +110,42 @@ body {
         height: 1.5rem;
         width: 1.5rem;
         right: 10px;
-        background: $Color-button;
-        border: 1px solid $Color-button;
+        background: #9356DC;
+        border: 1px solid #9356DC;
+        color: white;
+        margin-left: -25px;
         border-radius: 100%;
     }
 
     .Button-icon {
-        position: relative;
-        top: 2px;
-        right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: gray;
-        margin: 0 5px;
+        margin: 0 20px;
+        width: 1%;
+    }
+
+    .Button-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
     }
 }
 
+.Choice-selection:hover .Button-icon {
+    color: #9356DC;
+}
+
+.Choice-selection:hover {
+    background-color: #e9e1f3;
+}
+
+
 .Bloc-page {
+
+    background-color: $Color-background;
 
     .Restaurant {
         padding-left: $size * 2;
@@ -148,19 +164,17 @@ body {
         margin: $size;
         box-shadow: 2px 2px 10px white;
         position: relative;
-        background-color: rgb(234, 244, 248);
+        background-color: white;
         
 
         .Card-badge {
             background-color: #99E2D0;
-            color: #FF79DA;
+            color: #1b6150;
             padding: $size / 1.5;
-            border-radius: 0;
+            border-radius: 2px;
             position: absolute;
             top: 1.75rem;
             right: 1rem;
-
-            animation: 1s 1s 10 both Nouveau; 
         }
     }
 
@@ -230,5 +244,24 @@ footer {
         border: 1px solid red;
         margin: $size;
         width: 100%;
+    }
+
+    .Under-bloc-menu {
+
+        .Card-description {
+            background-color: lightgray;
+            padding: $size * 2;
+            display: flex;
+
+            .Sous-card-description {
+                width: 75%;
+                border: 1px solid blue;
+            }
+
+            .Price-menu {
+                width: 25%;
+                border: 1px solid black;
+            }
+        }
     }
 }
