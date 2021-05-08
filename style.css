@@ -105,7 +105,7 @@ body {
   padding: 20px 20px;
   border-radius: 1rem 1rem 1rem 1rem;
   background-color: #f6f6f6;
-  margin: 10px 20px;
+  margin: 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +169,7 @@ body {
 
 .Choice-selection:hover {
   background-color: #e9e1f3;
+  cursor: default;
 }
 
 .Bloc-page {
@@ -208,7 +209,22 @@ body {
 }
 
 .Bloc-page .Page-description {
-  height: 40px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
+
+.Bloc-page .Page-description .Text-description {
+  width: 90%;
+}
+
+.Bloc-page .Page-description .Icone-description .Icone-position {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .Bloc-page a {
@@ -260,6 +276,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border: 1px solid black;
+  background-color: #f6f6f6;
 }
 
 .Bloc-menu-page .Menu-title {
@@ -274,20 +291,30 @@ footer {
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description {
-  background-color: lightgray;
-  padding: 20px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description {
   width: 75%;
-  border: 1px solid blue;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Price-menu {
   width: 25%;
-  border: 1px solid black;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
