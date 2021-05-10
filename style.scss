@@ -17,6 +17,71 @@ body {
     font-family: "Roboto";
 }
 
+/* Début du loader */
+
+.Loader {
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.Loader-part {
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: black;
+    border-bottom-color: black;
+    
+}
+
+.Loader-part1:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #ff79da;
+    animation: spin 1.5s linear infinite;
+}
+
+.Loader-part2:after {
+    content: '';
+    position: absolute;
+    top: 5px; 
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #cf64dc;
+    animation: spin 1s linear infinite;
+}
+
+.Loader-part3:after {
+    content: '';
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #9356dc;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+/* Début du Header */
 
 .Header {
 
@@ -214,10 +279,12 @@ body {
 
             .Icone-full:hover {
                 transition: all 1s linear;
+                
             }
 
             .Icone-empty:hover {
                 transition: all 1s linear;
+               
             }
 
         }
