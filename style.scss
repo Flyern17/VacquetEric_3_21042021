@@ -247,9 +247,9 @@ body {
     }
 
     .Page-cadre {
-        padding: $size;
-        margin: $size;
+        margin: $size * 2;
         box-shadow: 2px 2px 10px white;
+        border-radius: 30px;
         position: relative;
         background-color: white;
         
@@ -269,83 +269,53 @@ body {
         height: auto; 
         display: flex;
         width: 100%;
-        padding: 15px;
+        padding-left: 15px;
 
         .Text-description {
             width: 90%;
-
         }
 
         .Icone-description {
             
             font-size: 35px;
-            
-            
-            .Icone-position {
-                position: absolute;
-                bottom: 60px;
-                right: 50px;
-            }
-
-            .Icone-empty {
-                z-index: 10;
-                animation: 1s 0s 0 both HeartEmptyAnimation;
-            }
-
-            .Icone-full {
-                color: #ff79da;
-                z-index: 5;
-                animation: 1s 0s 0 both HeartFullAnimation;    
-            }
-
-            .Icone-full:hover {
-                transition: all 1s linear;
-                
-            }
-
-            .Icone-empty:hover {
-                transition: all 1s linear;
-               
-            }
-
+            display: flex;
+            align-items: center;
         }
+
+        .Icone-empty {
+            font-size: 30px;
+            transition: all 0.01s linear;
+        }
+
+        .fa-gradient:hover {
+            background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
     }
 
-    @keyframes HeartFullAnimation {
+    @keyframes heartfullanim {
 
         from {
-            opacity: 0;
-            z-index: 5;
+            
         }
-        
+
         to {
-            opacity: 1;
-            z-index: 15;
+            font-weight: bold;
         }
+
     }
-
-
-    @keyframes HeartEmptyAnimation {
-
-        from {
-            opacity: 1;
-            z-index: 10;
-        }
-        
-        to {
-            opacity: 0;
-            z-index: 0;
-        }
-    }
-
 
     a {
         text-decoration: none;
         color: black;
 
-        h3 {
-            line-height: 0;
+        .Text-description {
+            line-height: 5px;
         }
+        
     }
 }
 
