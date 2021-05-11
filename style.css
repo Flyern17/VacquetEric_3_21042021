@@ -94,27 +94,30 @@ body {
 
 */
 /* Début du Header */
-.Header .Header-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px;
-  font-weight: 500;
+.Header .Header-logo {
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.Header .Header-icon {
+.Header-global {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.Description-site .Header-icon {
   margin: 0 10px;
 }
 
-.Header a {
+.Description-site a {
   padding: 10px;
   font-size: 20px;
 }
 
-.Header .Header-localisation {
+.Description-site .Header-localisation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +129,7 @@ body {
   background-color: #e6e1e1;
 }
 
-.Header .Header-menu {
+.Description-site .Header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,21 +143,21 @@ body {
   padding-bottom: 60px;
 }
 
-.Header .Header-menu .Header-menu-title {
+.Description-site .Header-menu .Header-menu-title {
   font-size: 16px;
   font-weight: 900;
   width: 100%;
   text-align: center;
 }
 
-.Header .Header-menu .Header-menu-description {
+.Description-site .Header-menu .Header-menu-description {
   font-size: 14px;
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.Header .Header-menu .Header-menu-button {
+.Description-site .Header-menu .Header-menu-button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   padding: 15px;
@@ -162,7 +165,7 @@ body {
   border-radius: 2rem;
 }
 
-.Header .Header-menu .Header-menu-button .Button-anchor {
+.Description-site .Header-menu .Header-menu-button .Button-anchor {
   text-decoration: none;
   color: white;
   padding: 15px;
@@ -316,8 +319,8 @@ body {
 
 .Bloc-page .Page-description .Icone-empty {
   font-size: 30px;
-  -webkit-transition: all 0.01s linear;
-  transition: all 0.01s linear;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
 }
 
 .Bloc-page .Page-description .fa-gradient:hover {
@@ -325,9 +328,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  -webkit-animation: 1s 0 0 both heartanim;
+          animation: 1s 0 0 both heartanim;
 }
 
-@-webkit-keyframes heartfullanim {
+@-webkit-keyframes heartanim {
   from {
   }
   to {
@@ -335,7 +340,7 @@ body {
   }
 }
 
-@keyframes heartfullanim {
+@keyframes heartanim {
   from {
   }
   to {
@@ -366,6 +371,7 @@ footer {
   color: white;
   font-weight: 500;
   padding-top: 20px;
+  margin-top: 0;
 }
 
 .Footer-bloc a {
@@ -378,6 +384,43 @@ footer {
 }
 
 /* Menu */
+.Header-sous-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-left: 30px;
+}
+
+.Header-sous-menu .Menu-title {
+  width: 75%;
+}
+
+.Header-sous-menu .Icone-description {
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header-sous-menu .Icone-empty {
+  font-size: 30px;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+}
+
+.Header-sous-menu .fa-gradient:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-animation: 1s 0 0 both heartanim;
+          animation: 1s 0 0 both heartanim;
+}
+
 .Card-Image-Menu img {
   width: 100%;
   max-height: 512px;
@@ -393,11 +436,13 @@ footer {
       flex-wrap: wrap;
   border: 1px solid black;
   background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
 }
 
 .Bloc-menu-page .Menu-title {
   width: 100%;
   margin: 10px;
+  font-weight: 500;
 }
 
 .Bloc-menu-page .Sous-bloc-menu {

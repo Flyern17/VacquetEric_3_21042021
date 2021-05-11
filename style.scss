@@ -106,13 +106,22 @@ body {
 
 .Header {
 
-    .Header-title {
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        font-weight: 500;
+    .Header-logo {
+        width: 200px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
+}
+
+.Header-global {
+    display: inline-flex;
+
+}
+
+.Description-site {
     .Header-icon {
         margin: 0 10px;
     }
@@ -167,6 +176,7 @@ body {
         }
     }
 }
+
 
 .Fonctionnement-mode {
     display: flex;
@@ -284,7 +294,7 @@ body {
 
         .Icone-empty {
             font-size: 30px;
-            transition: all 0.01s linear;
+            transition: all 0s linear;
         }
 
         .fa-gradient:hover {
@@ -292,11 +302,12 @@ body {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
+            animation: 1s 0 0 both heartanim;
         }
 
     }
 
-    @keyframes heartfullanim {
+    @keyframes heartanim {
 
         from {
             
@@ -332,6 +343,7 @@ footer {
         color: white;
         font-weight: 500;
         padding-top: $size * 2;
+        margin-top: 0;
     }
 
     a {
@@ -348,6 +360,37 @@ footer {
 
 /* Menu */
 
+.Header-sous-menu {
+
+    display: flex;
+    width: 90%;
+    padding-left: 30px;
+
+    .Menu-title {
+        width: 75%;
+    }
+
+    .Icone-description {
+            
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Icone-empty {
+        font-size: 30px;
+        transition: all 0s linear;
+    }
+
+    .fa-gradient:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        animation: 1s 0 0 both heartanim;
+    }
+}
+
 .Card-Image-Menu {
     img {
         width: 100%;
@@ -362,10 +405,12 @@ footer {
     flex-wrap: wrap;
     border: 1px solid black;
     background-color: #f6f6f6;
+    border-radius: 30px 30px 0 0;
 
     .Menu-title {
         width: 100%;
         margin: $size;
+        font-weight: 500;
     }
 
     .Sous-bloc-menu {
