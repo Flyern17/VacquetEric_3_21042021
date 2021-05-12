@@ -467,20 +467,6 @@ footer {
             animation: spawncard 0.5s;
             animation-fill-mode: both;
 
-            .c0 {
-                animation-delay: 0s;
-            }
-            
-            .c1 {
-                animation-delay: 1s;
-            }
-            
-            .c2 {
-                animation-delay: 2s;
-            }
-
-            
-
             .Sous-card-description {
                 white-space: nowrap;
                 overflow: hidden;
@@ -526,6 +512,19 @@ footer {
                 }
             }
         }
+
+        .c0 {
+            animation-delay: 0s;
+        }
+        
+        .c1 {
+            animation-delay: 1s;
+        }
+        
+        .c2 {
+            animation-delay: 2s;
+        }
+
 
         .Card-description:hover .Icon-confirmation {
             transform: rotate(360deg);

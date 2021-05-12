@@ -548,21 +548,6 @@ footer {
           animation-fill-mode: both;
 }
 
-.Bloc-menu-page .Under-bloc-menu .Card-description .c0 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.Bloc-menu-page .Under-bloc-menu .Card-description .c1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.Bloc-menu-page .Under-bloc-menu .Card-description .c2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description {
   white-space: nowrap;
   overflow: hidden;
@@ -623,6 +608,21 @@ footer {
           justify-content: center;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.Bloc-menu-page .Under-bloc-menu .c0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description:hover .Icon-confirmation {
