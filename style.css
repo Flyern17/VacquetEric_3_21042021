@@ -546,8 +546,6 @@ footer {
           animation: spawncard 0.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .c0 {
@@ -604,6 +602,8 @@ footer {
   width: 65px;
   height: auto;
   margin: -16px -80px -16px 16px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Menu-confirmation .Icon-confirmation {
@@ -625,14 +625,22 @@ footer {
           transform: rotate(180deg);
 }
 
-.Bloc-menu-page .Under-bloc-menu .Card-description:hover {
+.Bloc-menu-page .Under-bloc-menu .Card-description:hover .Icon-confirmation {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description:hover .Menu-confirmation {
+  margin-right: -16px;
   cursor: pointer;
 }
 
 @-webkit-keyframes spawncard {
   from {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
@@ -642,8 +650,8 @@ footer {
 
 @keyframes spawncard {
   from {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
