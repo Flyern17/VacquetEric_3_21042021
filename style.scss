@@ -113,11 +113,6 @@ body {
 
 }
 
-.Header-global {
-    display: inline-flex;
-
-}
-
 .Description-site {
     .Header-icon {
         margin: 0 10px;
@@ -299,7 +294,9 @@ body {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
-            animation: 1s 0 0 both heartanim;
+            animation: heartanim 0.01s;
+            animation-delay: 0s;
+            animation-fill-mode: both;
         }
 
     }
@@ -307,11 +304,11 @@ body {
     @keyframes heartanim {
 
         from {
-            
+            opacity: 0.3;
         }
 
         to {
-            font-weight: bold;
+            opacity: 1;
         }
 
     }
@@ -356,6 +353,24 @@ footer {
 }
 
 /* Menu */
+
+.Header-global {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Previous-menu {
+
+        .Header-icon-menu {
+            position: absolute;
+            left: 30px;
+            top: 33px;
+            font-size: 25px;
+            color: black;
+        }
+    }
+}
 
 .Header-sous-menu {
 
@@ -448,12 +463,30 @@ footer {
             border-radius: 15px;
             overflow: hidden;
             cursor: pointer;
-            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 10px rgb(204, 202, 202);
+            animation: spawncard 0.5s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+
+            .c0 {
+                animation-delay: 0s;
+            }
+            
+            .c1 {
+                animation-delay: 1s;
+            }
+            
+            .c2 {
+                animation-delay: 2s;
+            }
+
+            
 
             .Sous-card-description {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                width: 90%;
 
                 .Under-title-menu {
                     margin: 0;
@@ -500,6 +533,18 @@ footer {
     }
 }
 
+@keyframes spawncard {
+    from {
+        transform: scale(0.5);
+    }
+    
+    to {
+        transform: scale(1);
+    }
+}
+
+   
+
 .Command-button {
     display: flex;
     justify-content: center;
@@ -525,7 +570,6 @@ footer {
         }
 
         .Button-anchor:hover {
-            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
             border-radius: 2rem;
         }
     }

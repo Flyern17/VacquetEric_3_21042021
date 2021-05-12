@@ -137,12 +137,6 @@ body {
   margin-bottom: 30px;
 }
 
-.Header-global {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .Description-site .Header-icon {
   margin: 0 10px;
 }
@@ -363,23 +357,29 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  -webkit-animation: 1s 0 0 both heartanim;
-          animation: 1s 0 0 both heartanim;
+  -webkit-animation: heartanim 0.01s;
+          animation: heartanim 0.01s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes heartanim {
   from {
+    opacity: 0.3;
   }
   to {
-    font-weight: bold;
+    opacity: 1;
   }
 }
 
 @keyframes heartanim {
   from {
+    opacity: 0.3;
   }
   to {
-    font-weight: bold;
+    opacity: 1;
   }
 }
 
@@ -419,6 +419,26 @@ footer {
 }
 
 /* Menu */
+.Header-global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Header-global .Previous-menu .Header-icon-menu {
+  position: absolute;
+  left: 30px;
+  top: 33px;
+  font-size: 25px;
+  color: black;
+}
+
 .Header-sous-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,14 +540,36 @@ footer {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 10px #cccaca;
+          box-shadow: 2px 2px 10px #cccaca;
+  -webkit-animation: spawncard 0.5s;
+          animation: spawncard 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description .c0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description .c1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description .c2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 90%;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description .Under-title-menu {
@@ -587,6 +629,28 @@ footer {
   cursor: pointer;
 }
 
+@-webkit-keyframes spawncard {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes spawncard {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .Command-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,8 +683,6 @@ footer {
 }
 
 .Command-button .Menu-button .Button-anchor:hover {
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
