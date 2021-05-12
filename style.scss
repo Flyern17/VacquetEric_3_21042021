@@ -40,6 +40,7 @@ body {
 
 .Loader {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -254,6 +255,7 @@ body {
         border-radius: 30px;
         position: relative;
         background-color: white;
+        margin-bottom: 40px;
         
 
         .Card-badge {
@@ -271,43 +273,43 @@ body {
         height: auto; 
         display: flex;
         width: 100%;
-        padding-left: 15px;
 
         .Text-description {
-            width: 90%;
+            flex: 1;
         }
 
         .Icone-description {
             
             font-size: 35px;
+            width: 40px;
             display: flex;
             align-items: center;
         }
 
-        .Icone-empty {
-            font-size: 30px;
-            transition: all 0s linear;
+        .Icone-position {
+            position: absolute;
         }
 
-        .fa-gradient:hover {
+        .Icone-empty {
+            font-size: 29px;
+            transition: all 0.5s linear;
+            opacity: 1;
+        }
+
+        .Icone-full {
+            font-size: 30px;
             background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: bold;
-            animation: heartanim 0.01s;
-            animation-delay: 0s;
-            animation-fill-mode: both;
+            opacity: 0;
+            transition: all 0.5s linear;
         }
 
-    }
-
-    @keyframes heartanim {
-
-        from {
-            opacity: 0.3;
+        .Icone-empty:hover {
+            opacity: 0;
         }
 
-        to {
+        .Icone-full:hover {
             opacity: 1;
         }
 
@@ -379,14 +381,13 @@ footer {
     padding-left: 30px;
 
     .Menu-title {
-        width: 75%;
+        flex: 1;
     }
 
     .Icone-description {
-            
-        font-size: 35px;
         display: flex;
         align-items: center;
+        width: 25px;
     }
 
     .Icone-empty {
@@ -459,7 +460,6 @@ footer {
             justify-content: space-between;
             margin: $size * 2;
             padding: 15px;
-            border: 1px solid white;
             border-radius: 15px;
             overflow: hidden;
             cursor: pointer;
@@ -513,15 +513,39 @@ footer {
             }
         }
 
-        .c0 {
+        .c1 {
             animation-delay: 0s;
         }
         
-        .c1 {
-            animation-delay: 1s;
+        .c2 {
+            animation-delay: 0.25s;
         }
         
-        .c2 {
+        .c3 {
+            animation-delay: 0.5s;
+        }
+
+        .c4 {
+            animation-delay: 0.75s;
+        }
+
+        .c5 {
+            animation-delay: 1s;
+        }
+
+        .c6 {
+            animation-delay: 1.25s;
+        }
+
+        .c7 {
+            animation-delay: 1.5s;
+        }
+
+        .c8 {
+            animation-delay: 1.75s;
+        }
+
+        .c9 {
             animation-delay: 2s;
         }
 

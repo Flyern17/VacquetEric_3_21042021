@@ -58,6 +58,7 @@ body {
 
 .Loader {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -311,6 +312,7 @@ body {
   border-radius: 30px;
   position: relative;
   background-color: white;
+  margin-bottom: 40px;
 }
 
 .Bloc-page .Page-cadre .Card-badge {
@@ -329,15 +331,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-left: 15px;
 }
 
 .Bloc-page .Page-description .Text-description {
-  width: 90%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .Bloc-page .Page-description .Icone-description {
   font-size: 35px;
+  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,41 +350,33 @@ body {
           align-items: center;
 }
 
-.Bloc-page .Page-description .Icone-empty {
-  font-size: 30px;
-  -webkit-transition: all 0s linear;
-  transition: all 0s linear;
+.Bloc-page .Page-description .Icone-position {
+  position: absolute;
 }
 
-.Bloc-page .Page-description .fa-gradient:hover {
+.Bloc-page .Page-description .Icone-empty {
+  font-size: 29px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  opacity: 1;
+}
+
+.Bloc-page .Page-description .Icone-full {
+  font-size: 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  -webkit-animation: heartanim 0.01s;
-          animation: heartanim 0.01s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
-@-webkit-keyframes heartanim {
-  from {
-    opacity: 0.3;
-  }
-  to {
-    opacity: 1;
-  }
+.Bloc-page .Page-description .Icone-empty:hover {
+  opacity: 0;
 }
 
-@keyframes heartanim {
-  from {
-    opacity: 0.3;
-  }
-  to {
-    opacity: 1;
-  }
+.Bloc-page .Page-description .Icone-full:hover {
+  opacity: 1;
 }
 
 .Bloc-page a {
@@ -448,17 +444,19 @@ footer {
 }
 
 .Header-sous-menu .Menu-title {
-  width: 75%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .Header-sous-menu .Icone-description {
-  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 25px;
 }
 
 .Header-sous-menu .Icone-empty {
@@ -536,7 +534,6 @@ footer {
           justify-content: space-between;
   margin: 20px;
   padding: 15px;
-  border: 1px solid white;
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
@@ -610,17 +607,47 @@ footer {
           transform: rotate(180deg);
 }
 
-.Bloc-menu-page .Under-bloc-menu .c0 {
+.Bloc-menu-page .Under-bloc-menu .c1 {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
-.Bloc-menu-page .Under-bloc-menu .c1 {
+.Bloc-menu-page .Under-bloc-menu .c2 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c3 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c4 {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c5 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-.Bloc-menu-page .Under-bloc-menu .c2 {
+.Bloc-menu-page .Under-bloc-menu .c6 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c7 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c8 {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c9 {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
