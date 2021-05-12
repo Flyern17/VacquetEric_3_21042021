@@ -426,15 +426,18 @@ footer {
   max-height: 512px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 0;
 }
 
 .Bloc-menu-page {
+  position: relative;
+  margin-top: -40px;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid black;
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
 }
@@ -446,9 +449,26 @@ footer {
 }
 
 .Bloc-menu-page .Sous-bloc-menu {
-  border: 1px solid red;
   margin: 10px;
   width: 100%;
+  overflow: hidden;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.Bloc-menu-page .Sous-bloc-menu .Sous-menu-title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.Bloc-menu-page .Sous-bloc-menu .Sous-menu-title:after {
+  content: '';
+  width: 50px;
+  height: 5px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 11px;
+  margin-top: 25px;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description {
@@ -457,8 +477,9 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin: 20px;
+  padding: 15px;
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
@@ -466,13 +487,62 @@ footer {
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description {
-  width: 75%;
-  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description .Under-title-menu {
+  margin: 0;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description p {
+  margin: 0;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Price-menu {
-  width: 25%;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description .Menu-confirmation {
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65px;
+  height: auto;
+  margin: -16px -80px -16px 16px;
+}
+
+.Bloc-menu-page .Under-bloc-menu .Card-description .Menu-confirmation .Icon-confirmation {
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description:hover {
