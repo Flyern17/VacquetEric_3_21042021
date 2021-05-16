@@ -56,71 +56,79 @@ body {
   }
 }
 
-/*
 .Loader {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: loader 0.01s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: loader 0.01s;
+          animation: loader 0.01s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .Loader-part {
-    width: 75px;
-    height: 75px; 
-    opacity: 1;
-    position: fixed;
+  width: 75px;
+  height: 75px;
+  opacity: 1;
+  position: fixed;
 }
 
-
 .Loader-part1:after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    border-top-color: #ff79da;
-    animation: spin 1.5s linear infinite;
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: #ff79da;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
 }
 
 .Loader-part2:after {
-    content: '';
-    position: absolute;
-    top: 5px; 
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    border-top-color: #cf64dc;
-    animation: spin 1s linear infinite;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: #cf64dc;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
 
 .Loader-part3:after {
-    content: '';
-    position: absolute;
-    top: 10px; 
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    border-top-color: #9356dc;
-    animation: spin 0.5s linear infinite;
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: #9356dc;
+  -webkit-animation: spin 0.5s linear infinite;
+          animation: spin 0.5s linear infinite;
 }
 
-box-shadow: 0 0px 10px rgba(188, 188, 188, 0.5);
-*/
 /* Début du Header */
 .Header .Header-logo {
   width: 175px;
