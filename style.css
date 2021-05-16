@@ -767,4 +767,26 @@ footer {
 .Command-button .Menu-button .Button-anchor:hover {
   border-radius: 2rem;
 }
+
+@media screen and (min-width: 1000px) {
+  .Fonctionnement-mode .Choice-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Fonctionnement-mode .Choice-selection {
+    width: calc(33% - 50px);
+  }
+  .Page-bloc {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Page-bloc a {
+    width: calc(50% - 30px);
+  }
+}
 /*# sourceMappingURL=style.css.map */

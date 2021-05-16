@@ -646,3 +646,27 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+    
+    .Fonctionnement-mode {
+
+        .Choice-menu {
+            display: flex;
+        }
+
+        .Choice-selection {
+            width: calc(33% - 50px);
+        }
+    }
+
+    .Page-bloc {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            width: calc(50% - 30px);
+        }
+    }
+}
