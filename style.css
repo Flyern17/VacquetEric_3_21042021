@@ -56,86 +56,82 @@ body {
   }
 }
 
+/*
 .Loader {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: loader 0.01s;
-          animation: loader 0.01s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 0.01s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
 }
 
 .Loader-part {
-  width: 75px;
-  height: 75px;
-  opacity: 1;
-  position: fixed;
+    width: 75px;
+    height: 75px; 
+    opacity: 1;
+    position: fixed;
 }
 
+
 .Loader-part1:after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  border-radius: 50px;
-  border: 3px solid transparent;
-  border-top-color: #ff79da;
-  -webkit-animation: spin 1.5s linear infinite;
-          animation: spin 1.5s linear infinite;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #ff79da;
+    animation: spin 1.5s linear infinite;
 }
 
 .Loader-part2:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  bottom: 5px;
-  right: 5px;
-  border-radius: 50px;
-  border: 3px solid transparent;
-  border-top-color: #cf64dc;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+    content: '';
+    position: absolute;
+    top: 5px; 
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #cf64dc;
+    animation: spin 1s linear infinite;
 }
 
 .Loader-part3:after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  border-radius: 50px;
-  border: 3px solid transparent;
-  border-top-color: #9356dc;
-  -webkit-animation: spin 0.5s linear infinite;
-          animation: spin 0.5s linear infinite;
+    content: '';
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #9356dc;
+    animation: spin 0.5s linear infinite;
 }
 
+box-shadow: 0 0px 10px rgba(188, 188, 188, 0.5);
+*/
 /* Début du Header */
 .Header .Header-logo {
-  width: 200px;
+  width: 175px;
   display: block;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.Description-site {
+  margin-bottom: 20px;
 }
 
 .Description-site .Header-icon {
@@ -144,7 +140,11 @@ body {
 
 .Description-site a {
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.Description-site .Header-icon {
+  color: #3a3a3a;
 }
 
 .Description-site .Header-localisation {
@@ -154,7 +154,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 3px solid lightgray;
   padding: 10px 0px;
   background-color: #e6e1e1;
 }
@@ -174,23 +173,25 @@ body {
 }
 
 .Description-site .Header-menu .Header-menu-title {
-  font-size: 16px;
-  font-weight: 900;
+  font-size: 24px;
+  font-weight: 700;
   width: 100%;
   text-align: center;
+  margin: 20px 50px;
 }
 
 .Description-site .Header-menu .Header-menu-description {
-  font-size: 14px;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .Description-site .Header-menu .Header-menu-button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-  padding: 15px;
+  padding: 15px 0;
   border: 1px solid linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   border-radius: 2rem;
 }
@@ -198,7 +199,7 @@ body {
 .Description-site .Header-menu .Header-menu-button .Button-anchor {
   text-decoration: none;
   color: white;
-  padding: 15px;
+  padding: 20px;
 }
 
 .Fonctionnement-mode {
@@ -209,6 +210,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .Fonctionnement-mode .Selection-header {
@@ -290,6 +292,7 @@ body {
 
 .Bloc-page {
   background-color: #f6f6f6;
+  padding: 30px 0;
 }
 
 .Bloc-page .Restaurant {
@@ -302,14 +305,14 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  border-radius: 30px 30px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .Bloc-page .Page-cadre {
   margin: 20px;
-  -webkit-box-shadow: 2px 2px 10px white;
-          box-shadow: 2px 2px 10px white;
-  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 10px lightgray;
+          box-shadow: 2px 2px 10px lightgray;
+  border-radius: 20px;
   position: relative;
   background-color: white;
   margin-bottom: 40px;
@@ -317,11 +320,12 @@ body {
 
 .Bloc-page .Page-cadre .Card-badge {
   background-color: #99E2D0;
-  color: #1b6150;
-  padding: 6.66667px;
+  color: #008766;
+  font-weight: 500;
+  padding: 8px 13px;
   border-radius: 2px;
   position: absolute;
-  top: 1.75rem;
+  top: 1rem;
   right: 1rem;
 }
 
@@ -331,6 +335,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .Bloc-page .Page-description .Text-description {
@@ -341,7 +347,7 @@ body {
 
 .Bloc-page .Page-description .Icone-description {
   font-size: 35px;
-  width: 40px;
+  width: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +368,7 @@ body {
 }
 
 .Bloc-page .Page-description .Icone-full {
-  font-size: 30px;
+  font-size: 29px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -393,9 +399,9 @@ footer {
 }
 
 .Footer-bloc {
-  margin-left: 15px;
+  margin-left: 25px;
   line-height: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .Footer-bloc h2 {
@@ -407,7 +413,21 @@ footer {
 
 .Footer-bloc a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer-bloc a .Text-footer1 {
+  padding-left: 15px;
+}
+
+.Footer-bloc a .Text-footer2 {
+  padding-left: 8px;
 }
 
 .Footer-bloc div {
@@ -429,10 +449,10 @@ footer {
 
 .Header-global .Previous-menu .Header-icon-menu {
   position: absolute;
-  left: 30px;
-  top: 33px;
-  font-size: 25px;
-  color: black;
+  left: 25px;
+  top: 18px;
+  font-size: 20px;
+  color: #5f5f5f;
 }
 
 .Header-sous-menu {
@@ -440,7 +460,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 90%;
-  padding-left: 30px;
+  padding-left: 10px;
+  padding-top: 20px;
 }
 
 .Header-sous-menu .Menu-title {
@@ -456,22 +477,36 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 25px;
+  width: 40px;
+}
+
+.Header-sous-menu .Icone-position {
+  position: absolute;
 }
 
 .Header-sous-menu .Icone-empty {
-  font-size: 30px;
-  -webkit-transition: all 0s linear;
-  transition: all 0s linear;
+  font-size: 29px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  opacity: 1;
 }
 
-.Header-sous-menu .fa-gradient:hover {
+.Header-sous-menu .Icone-full {
+  font-size: 29px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  -webkit-animation: 1s 0 0 both heartanim;
-          animation: 1s 0 0 both heartanim;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.Header-sous-menu .Icone-empty:hover {
+  opacity: 0;
+}
+
+.Header-sous-menu .Icone-full:hover {
+  opacity: 1;
 }
 
 .Card-Image-Menu img {
@@ -484,7 +519,7 @@ footer {
 
 .Bloc-menu-page {
   position: relative;
-  margin-top: -40px;
+  margin-top: -50px;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,18 +534,18 @@ footer {
   width: 100%;
   margin: 10px;
   font-weight: 500;
+  font-size: 26px;
 }
 
 .Bloc-menu-page .Sous-bloc-menu {
-  margin: 10px;
+  margin: 0;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .Bloc-menu-page .Sous-bloc-menu .Sous-menu-title {
   font-weight: 400;
+  margin-left: 20px;
   text-transform: uppercase;
 }
 
@@ -520,7 +555,7 @@ footer {
   height: 5px;
   background-color: #99e2d0;
   position: absolute;
-  left: 11px;
+  left: 20px;
   margin-top: 25px;
 }
 
@@ -546,18 +581,18 @@ footer {
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description {
-  white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   width: 90%;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description .Under-title-menu {
   margin: 0;
+  font-size: 18px;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description p {
   margin: 0;
+  font-size: 14px;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Price-menu {
@@ -704,7 +739,7 @@ footer {
 .Command-button .Menu-button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-  padding: 15px;
+  padding: 15px 0;
   border: 1px solid linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   border-radius: 2rem;
 }
@@ -712,7 +747,7 @@ footer {
 .Command-button .Menu-button .Button-anchor {
   text-decoration: none;
   color: white;
-  padding: 15px;
+  padding: 50px;
   font-weight: 500;
   font-size: 18px;
 }
