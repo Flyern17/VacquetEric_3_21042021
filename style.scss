@@ -168,7 +168,6 @@ body {
         .Header-menu-button {
             background-image: $Color-button;
             padding: 15px 0;
-            border: 1px solid $Color-button;
             border-radius: 2rem;
             
 
@@ -212,7 +211,6 @@ body {
         width: 1.5rem;
         right: 10px;
         background: #9356DC;
-        border: 1px solid #9356DC;
         color: white;
         margin-left: -25px;
         border-radius: 100%;
@@ -509,6 +507,8 @@ footer {
 
             .Sous-card-description {
                 text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
                 width: 90%;
 
                 .Under-title-menu {
@@ -589,6 +589,10 @@ footer {
             animation-delay: 2s;
         }
 
+        .c10 {
+            animation-delay: 2.25s;
+        }
+
 
         .Card-description:hover .Icon-confirmation {
             transform: rotate(360deg);
@@ -626,7 +630,6 @@ footer {
     .Menu-button {
         background-image: $Color-button;
         padding: 15px 0;
-        border: 1px solid $Color-button;
         border-radius: 2rem;
         
 

@@ -200,7 +200,6 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   padding: 15px 0;
-  border: 1px solid linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   border-radius: 2rem;
 }
 
@@ -255,7 +254,6 @@ body {
   width: 1.5rem;
   right: 10px;
   background: #9356DC;
-  border: 1px solid #9356DC;
   color: white;
   margin-left: -25px;
   border-radius: 100%;
@@ -590,6 +588,8 @@ footer {
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   width: 90%;
 }
 
@@ -695,6 +695,11 @@ footer {
           animation-delay: 2s;
 }
 
+.Bloc-menu-page .Under-bloc-menu .c10 {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+
 .Bloc-menu-page .Under-bloc-menu .Card-description:hover .Icon-confirmation {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -748,7 +753,6 @@ footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   padding: 15px 0;
-  border: 1px solid linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   border-radius: 2rem;
 }
 
