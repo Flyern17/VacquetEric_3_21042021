@@ -656,48 +656,48 @@ footer {
 }
 
 .Bloc-menu-page .Under-bloc-menu .c2 {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .c3 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.30s;
+          animation-delay: 0.30s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .c4 {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c5 {
+  -webkit-animation-delay: 0.60s;
+          animation-delay: 0.60s;
+}
+
+.Bloc-menu-page .Under-bloc-menu .c6 {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
 
-.Bloc-menu-page .Under-bloc-menu .c5 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.Bloc-menu-page .Under-bloc-menu .c6 {
-  -webkit-animation-delay: 1.25s;
-          animation-delay: 1.25s;
-}
-
 .Bloc-menu-page .Under-bloc-menu .c7 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 0.90s;
+          animation-delay: 0.90s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .c8 {
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .c9 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.20s;
+          animation-delay: 1.20s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .c10 {
-  -webkit-animation-delay: 2.25s;
-          animation-delay: 2.25s;
+  -webkit-animation-delay: 1.35s;
+          animation-delay: 1.35s;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description:hover .Icon-confirmation {
@@ -823,6 +823,12 @@ footer {
   }
   .Bloc-menu-page .Sous-bloc-menu {
     width: 33%;
+  }
+  .Bloc-menu-page .Sous-bloc-menu .Sous-menu-title {
+    position: relative;
+  }
+  .Bloc-menu-page .Sous-bloc-menu .Sous-menu-title:after {
+    left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

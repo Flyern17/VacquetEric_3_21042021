@@ -558,39 +558,39 @@ footer {
         }
         
         .c2 {
-            animation-delay: 0.25s;
+            animation-delay: 0.15s;
         }
         
         .c3 {
-            animation-delay: 0.5s;
+            animation-delay: 0.30s;
         }
 
         .c4 {
-            animation-delay: 0.75s;
+            animation-delay: 0.45s;
         }
 
         .c5 {
-            animation-delay: 1s;
+            animation-delay: 0.60s;
         }
 
         .c6 {
-            animation-delay: 1.25s;
+            animation-delay: 0.75s;
         }
 
         .c7 {
-            animation-delay: 1.5s;
+            animation-delay: 0.90s;
         }
 
         .c8 {
-            animation-delay: 1.75s;
+            animation-delay: 1.05s;
         }
 
         .c9 {
-            animation-delay: 2s;
+            animation-delay: 1.20s;
         }
 
         .c10 {
-            animation-delay: 2.25s;
+            animation-delay: 1.35s;
         }
 
 
@@ -695,6 +695,17 @@ footer {
         }
         .Sous-bloc-menu {
             width: 33%;
+
+            .Sous-menu-title {
+                position: relative;
+            }
+
+            .Sous-menu-title:after {
+                left: 0;
+            }
         }
     }
+
+
+
 }
