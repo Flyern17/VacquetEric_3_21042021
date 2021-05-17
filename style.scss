@@ -664,9 +664,37 @@ footer {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         a {
-            width: calc(50% - 30px);
+            display: flex;
+            width: calc(50% - 40px);
+        }
+
+        .Page-cadre {
+            margin-bottom: 20px;
+        }
+    }
+
+    .Footer-bloc {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Bloc-menu-page {
+
+        .Header-sous-menu {
+        
+            .Icone-description {
+                display: flex;
+                align-items: center;
+                width: 0;
+            }
+        }
+        .Sous-bloc-menu {
+            width: 33%;
         }
     }
 }
