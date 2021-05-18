@@ -186,13 +186,19 @@ body {
             background-image: $Color-button;
             padding: 15px 0;
             border-radius: 2rem;
-            
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+            transition: all 0.25s linear;
 
             .Button-anchor {
                 text-decoration: none;
                 color: white;
                 padding: 20px;
             }
+        }
+
+        .Header-menu-button:hover {
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+            opacity: 0.9;
         }
     }
 }
@@ -357,6 +363,8 @@ body {
     }
 }
 
+/* Footer */
+
 footer {
     background: #353535;
 }
@@ -386,6 +394,10 @@ footer {
         .Text-footer2 {
             padding-left: 8px;
         }
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     div {
@@ -523,19 +535,28 @@ footer {
             animation-fill-mode: both;
 
             .Sous-card-description {
-                text-overflow: ellipsis;
-                overflow: hidden;
                 white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
                 width: 90%;
 
                 .Under-title-menu {
                     margin: 0;
                     font-size: 18px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
                 }
 
                 p {
                     margin: 0;
                     font-size: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
                 }
             }
 
@@ -543,6 +564,7 @@ footer {
                 font-weight: 700;
                 display: flex;
                 align-items: flex-end;
+                padding-left: 10px;
             }
 
             .Menu-confirmation {
@@ -648,6 +670,8 @@ footer {
         background-image: $Color-button;
         padding: 15px 0;
         border-radius: 2rem;
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+        transition: all 0.25s linear;
         
 
         .Button-anchor {
@@ -658,9 +682,11 @@ footer {
             font-size: 18px;
         }
 
-        .Button-anchor:hover {
-            border-radius: 2rem;
-        }
+    }
+
+    .Menu-button:hover {
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+        opacity: 0.9;
     }
 }
 
@@ -694,10 +720,11 @@ footer {
     }
 
     .Footer-bloc {
+
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
     }
 
     .Bloc-menu-page {

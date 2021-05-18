@@ -221,12 +221,22 @@ body {
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   padding: 15px 0;
   border-radius: 2rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 .Description-site .Header-menu .Header-menu-button .Button-anchor {
   text-decoration: none;
   color: white;
   padding: 20px;
+}
+
+.Description-site .Header-menu .Header-menu-button:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
 }
 
 .Fonctionnement-mode {
@@ -420,6 +430,7 @@ body {
   line-height: 5px;
 }
 
+/* Footer */
 footer {
   background: #353535;
 }
@@ -454,6 +465,10 @@ footer {
 
 .Footer-bloc a .Text-footer2 {
   padding-left: 8px;
+}
+
+.Footer-bloc a:hover {
+  text-decoration: underline;
 }
 
 .Footer-bloc div {
@@ -607,20 +622,29 @@ footer {
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description {
-  text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
   width: 90%;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description .Under-title-menu {
   margin: 0;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Sous-card-description p {
   margin: 0;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Price-menu {
@@ -631,6 +655,7 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-left: 10px;
 }
 
 .Bloc-menu-page .Under-bloc-menu .Card-description .Menu-confirmation {
@@ -774,6 +799,10 @@ footer {
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   padding: 15px 0;
   border-radius: 2rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 .Command-button .Menu-button .Button-anchor {
@@ -784,8 +813,10 @@ footer {
   font-size: 18px;
 }
 
-.Command-button .Menu-button .Button-anchor:hover {
-  border-radius: 2rem;
+.Command-button .Menu-button:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
 }
 
 @media screen and (min-width: 1000px) {
@@ -821,9 +852,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -831,6 +859,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 0;
   }
   .Bloc-menu-page .Header-sous-menu .Icone-description {
     display: -webkit-box;
