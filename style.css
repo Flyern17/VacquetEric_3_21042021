@@ -130,12 +130,31 @@ body {
 }
 
 /* Début du Header */
+.Header-border {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1px;
+  position: relative;
+  z-index: 9;
+}
+
+.Header-border .Header-logo {
+  width: 175px;
+  display: block;
+  margin: auto;
+}
+
+.Header {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
 .Header .Header-logo {
   width: 175px;
   display: block;
   margin: auto;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .Description-site {
@@ -162,7 +181,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0px;
+  padding: 15px 0px;
+  font-weight: 500;
   background-color: #e6e1e1;
 }
 
@@ -367,14 +387,14 @@ body {
 }
 
 .Bloc-page .Page-description .Icone-empty {
-  font-size: 29px;
+  font-size: 25px;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   opacity: 1;
 }
 
 .Bloc-page .Page-description .Icone-full {
-  font-size: 29px;
+  font-size: 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
