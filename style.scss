@@ -396,13 +396,21 @@ footer {
         }
     }
 
-    a:hover {
+    
+    .Text-footer1:hover {
+        text-decoration: underline;
+    }
+
+    .Text-footer2:hover {
+        text-decoration: underline;
+    }
+
+    .Contact:hover {
         text-decoration: underline;
     }
 
     div {
         color: white;
-        
     }
 }
 
@@ -722,6 +730,7 @@ footer {
             a {
                 display: flex;
                 width: calc(50% - 40px);
+                margin: 10px;
             }
 
             .Page-cadre {
@@ -732,10 +741,8 @@ footer {
 
     .Footer-bloc {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
+        margin-left: 46%;
+        
     }
 
     .Bloc-menu-page {
