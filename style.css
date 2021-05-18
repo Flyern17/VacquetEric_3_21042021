@@ -828,7 +828,10 @@ footer {
   .Fonctionnement-mode .Choice-selection {
     width: calc(33% - 50px);
   }
-  .Page-bloc {
+  .Bloc-page .Restaurant {
+    padding-left: 60px;
+  }
+  .Bloc-page .Page-bloc {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -839,13 +842,13 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .Page-bloc a {
+  .Bloc-page .Page-bloc a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: calc(50% - 40px);
   }
-  .Page-bloc .Page-cadre {
+  .Bloc-page .Page-bloc .Page-cadre {
     margin-bottom: 20px;
   }
   .Footer-bloc {

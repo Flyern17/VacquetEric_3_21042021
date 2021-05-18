@@ -703,19 +703,26 @@ footer {
         }
     }
 
-    .Page-bloc {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .Bloc-page {
 
-        a {
-            display: flex;
-            width: calc(50% - 40px);
+        .Restaurant {
+            padding-left: $size * 6;
         }
 
-        .Page-cadre {
-            margin-bottom: 20px;
+        .Page-bloc {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a {
+                display: flex;
+                width: calc(50% - 40px);
+            }
+
+            .Page-cadre {
+                margin-bottom: 20px;
+            }
         }
     }
 
