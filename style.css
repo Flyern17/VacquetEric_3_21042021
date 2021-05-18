@@ -820,6 +820,9 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+  .Fonctionnement-mode .Selection-header {
+    padding-left: 50px;
+  }
   .Fonctionnement-mode .Choice-menu {
     display: -webkit-box;
     display: -ms-flexbox;

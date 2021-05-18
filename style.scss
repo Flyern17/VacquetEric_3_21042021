@@ -694,6 +694,10 @@ footer {
     
     .Fonctionnement-mode {
 
+        .Selection-header {
+            padding-left: $size * 5;
+        }
+
         .Choice-menu {
             display: flex;
         }
