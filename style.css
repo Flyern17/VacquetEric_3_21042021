@@ -413,11 +413,11 @@ body {
   transition: all 0.5s linear;
 }
 
-.Bloc-page .Page-description .Icone-empty:hover {
+.Bloc-page .Page-description .Icone-description:hover .Icone-empty {
   opacity: 0;
 }
 
-.Bloc-page .Page-description .Icone-full:hover {
+.Bloc-page .Page-description .Icone-description:hover .Icone-full {
   opacity: 1;
 }
 
@@ -508,9 +508,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
   padding-left: 10px;
   padding-top: 20px;
+  width: 100%;
 }
 
 .Header-sous-menu .Menu-title {
@@ -526,7 +526,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
+  width: 65px;
 }
 
 .Header-sous-menu .Icone-position {
@@ -550,11 +550,11 @@ footer {
   transition: all 0.5s linear;
 }
 
-.Header-sous-menu .Icone-empty:hover {
+.Header-sous-menu .Icone-description:hover .Icone-empty {
   opacity: 0;
 }
 
-.Header-sous-menu .Icone-full:hover {
+.Header-sous-menu .Icone-description:hover .Icone-full {
   opacity: 1;
 }
 
@@ -873,7 +873,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 0;
+    width: 75px;
   }
   .Bloc-menu-page .Sous-bloc-menu {
     width: 33%;
