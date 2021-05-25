@@ -863,9 +863,6 @@ footer {
   .Bloc-page .Page-bloc .Page-cadre {
     margin-bottom: 20px;
   }
-  .Footer-bloc {
-    margin-left: 46%;
-  }
   .Bloc-menu-page .Header-sous-menu .Icone-description {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -883,6 +880,12 @@ footer {
   }
   .Bloc-menu-page .Sous-bloc-menu .Sous-menu-title:after {
     left: 0;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .Footer-bloc {
+    margin-left: 46%;
   }
 }
 /*# sourceMappingURL=style.css.map */

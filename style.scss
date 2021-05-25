@@ -745,12 +745,6 @@ footer {
         }
     }
 
-    .Footer-bloc {
-
-        margin-left: 46%;
-        
-    }
-
     .Bloc-menu-page {
 
         .Header-sous-menu {
@@ -774,6 +768,13 @@ footer {
         }
     }
 
+}
 
+@media screen and (min-width: 1050px) {
 
+    .Footer-bloc {
+
+        margin-left: 46%;
+    
+    }
 }
